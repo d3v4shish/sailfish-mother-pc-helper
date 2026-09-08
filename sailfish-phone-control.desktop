@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Sailfish Phone Control
+Comment=Discover and control a trusted Sailfish phone from this Linux computer
+Exec=sailfish-mother-pc-helper gui
+TryExec=sailfish-mother-pc-helper
+Terminal=false
+Categories=Network;
+Keywords=Sailfish;webcam;remote;LLs;

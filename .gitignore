@@ -1,0 +1,9 @@
+# Python runtime and test output
+__pycache__/
+*.py[cod]
+
+# Local helper state must never be versioned
+config.json
+secrets.json
+state.json
+*.log

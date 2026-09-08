@@ -1,0 +1,20 @@
+[Unit]
+Description=Sailfish Mother-PC Helper discovery listener
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/sailfish-mother-pc-helper listen
+Restart=on-failure
+RestartSec=5s
+Environment=PYTHONUNBUFFERED=1
+
+# Optional path overrides. Leave commented to use XDG defaults.
+# Environment=SAILFISH_HELPER_CONFIG_DIR=%h/.config/sailfish-mother-pc-helper
+# Environment=SAILFISH_HELPER_STATE_DIR=%h/.local/state/sailfish-mother-pc-helper
+# Environment=SAILFISH_HELPER_CACHE_DIR=%h/.cache/sailfish-mother-pc-helper
+# Environment=SAILFISH_HELPER_LOG_DIR=%h/.local/state/sailfish-mother-pc-helper/logs
+
+[Install]
+WantedBy=default.target

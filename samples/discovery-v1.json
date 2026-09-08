@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "device": {
+    "id": "sample-phone",
+    "name": "Sample Sailfish Phone"
+  },
+  "announced_at": "2026-01-01T00:00:00Z",
+  "network": {
+    "ip": "192.0.2.20"
+  },
+  "ssh": {
+    "host": "192.0.2.20",
+    "port": 22,
+    "user": "nemo"
+  },
+  "webcam": {
+    "mjpeg_url": "http://192.0.2.20:8090/stream.mjpeg",
+    "status_url": "http://192.0.2.20:8090/status.json"
+  },
+  "lls": {
+    "control_url": "http://192.0.2.20:8091/control",
+    "status_url": "http://192.0.2.20:8091/status"
+  },
+  "auth": {
+    "token_hint": "pairing-required"
+  }
+}
